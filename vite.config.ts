@@ -3,11 +3,12 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 
+// ... (tus imports iguales)
+
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, '.', '');
   return {
     plugins: [react(), tailwindcss()],
-    // Agregamos esto para que las rutas en Hostinger no se rompan
     base: './',
     define: {
       'process.env.GEMINI_API_KEY': JSON.stringify(env.GEMINI_API_KEY),
@@ -17,9 +18,10 @@ export default defineConfig(({ mode }) => {
         '@': path.resolve(__dirname, '.'),
       },
     },
-    // Configuramos la carpeta de salida
     build: {
-      outDir: 'dist',
+      // CAMBIÁ ESTA LÍNEA:
+      outDir: './',
+      emptyOutDir: false, // Importante para no borrar tus archivos fuente
     },
     server: {
       hmr: process.env.DISABLE_HMR !== 'true',
