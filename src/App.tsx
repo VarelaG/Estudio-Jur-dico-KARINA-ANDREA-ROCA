@@ -74,9 +74,10 @@ export default function App() {
           </div>
 
           <a
-            href="https://wa.me/+549332952-8537"
+            href="https://wa.me/5493329528537"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Agendar cita por WhatsApp"
             className="hidden md:flex items-center gap-2 rounded-sm border border-primary bg-transparent px-5 py-2 text-sm font-semibold uppercase tracking-wider text-primary hover:bg-primary hover:text-secondary transition-all duration-300"
           >
             <span>Agendar Cita</span>
@@ -109,7 +110,8 @@ export default function App() {
               </a>
             ))}
             <a
-              href="https://wa.me/+54 9 3329 52-8537"
+              href="https://wa.me/5493329528537"
+              aria-label="Agendar cita por WhatsApp"
               className="mt-2 flex items-center justify-center gap-2 rounded-sm bg-primary px-5 py-3 text-sm font-bold uppercase tracking-wider text-secondary"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -140,7 +142,7 @@ export default function App() {
           >
             <div className="mb-8 h-px w-24 bg-primary"></div>
             <h1 className="mb-6 font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Dra. Karina <br className="sm:hidden" /> Andrea Roca
+              Karina A. Roca <br className="sm:hidden" /> Estudio Jurídico
             </h1>
             <p className="mb-8 font-display text-xl font-medium tracking-wide text-primary sm:text-2xl">
               Abogada
@@ -176,14 +178,14 @@ export default function App() {
               <div className="col-span-2 aspect-[16/9] w-full overflow-hidden rounded-sm shadow-lg">
                 <img
                   src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1600&auto=format&fit=crop"
-                  alt="Lawyer writing"
+                  alt="Mano de la abogada Karina A. Roca redactando documentos jurídicos"
                   className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="aspect-square w-full overflow-hidden rounded-sm bg-gray-100 shadow-lg">
                 <img
                   src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?q=80&w=800&auto=format&fit=crop"
-                  alt="Gavel"
+                  alt="Mazo de la justicia en el estudio jurídico Roca de San Pedro"
                   className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -309,6 +311,7 @@ export default function App() {
                 <div
                   className="h-full w-full bg-cover bg-center opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
                   style={{ backgroundImage: "url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2000&auto=format&fit=crop')" }}
+                  title="Libros de derecho y mazo de madera"
                 ></div>
               </div>
             </div>
@@ -357,7 +360,7 @@ export default function App() {
 
               <div className="mt-10">
                 <a
-                  href="https://wa.me/+54 9 3329 52-8537"
+                  href="https://wa.me/5493329528537"
                   className="inline-flex items-center gap-3 rounded-sm bg-[#25D366] px-6 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#20bd5a] transition-colors shadow-lg shadow-green-900/20"
                 >
                   <MessageCircle className="h-5 w-5" />
@@ -367,20 +370,25 @@ export default function App() {
             </div>
 
             {/* Map Placeholder */}
-            <div className="h-[400px] w-full overflow-hidden rounded-sm border border-tertiary bg-secondary relative group">
+            <a
+              href="https://maps.app.goo.gl/g4rWpEjYArVxLCCH6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="h-[400px] w-full overflow-hidden rounded-sm border border-tertiary bg-secondary relative group block"
+            >
               <img
                 src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1600&auto=format&fit=crop"
-                alt="Map location"
+                alt="Mapa de ubicación del Estudio Jurídico Karina A. Roca en General Alvarado 90, San Pedro"
                 className="h-full w-full object-cover opacity-60 group-hover:opacity-70 transition-opacity"
               />
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="rounded bg-secondary/90 p-4 text-center shadow-xl backdrop-blur-sm border border-tertiary">
                   <MapPin className="mx-auto mb-2 text-4xl text-primary h-8 w-8" />
                   <p className="font-display font-bold text-white">General Alvarado 90</p>
-                  <p className="text-xs text-gray-400">San Pedro</p>
+                  <p className="text-xs text-gray-400">San Pedro (Click para ver en Google Maps)</p>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
 
@@ -399,7 +407,7 @@ export default function App() {
 
       {/* Floating WhatsApp */}
       <a
-        href="https://wa.me/+54 9 3329 52-8537"
+        href="https://wa.me/5493329528537"
         aria-label="Chat on WhatsApp"
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-transform hover:scale-110 hover:shadow-2xl hover:shadow-green-900/50"
       >
