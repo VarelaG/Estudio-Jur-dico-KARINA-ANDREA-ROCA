@@ -4,18 +4,18 @@
  */
 
 import { useState, useEffect } from 'react';
-import { 
-  Scale, 
-  Menu, 
-  X, 
-  CheckCircle, 
-  Home, 
-  Users, 
-  Accessibility, 
-  ScrollText, 
-  Gavel, 
-  MapPin, 
-  Phone, 
+import {
+  Scale,
+  Menu,
+  X,
+  CheckCircle,
+  Home,
+  Users,
+  Accessibility,
+  ScrollText,
+  Gavel,
+  MapPin,
+  Phone,
   Mail,
   MessageCircle
 } from 'lucide-react';
@@ -44,12 +44,11 @@ export default function App() {
   return (
     <div className="min-h-screen bg-background-dark text-slate-100 font-body selection:bg-primary selection:text-secondary">
       {/* Navbar */}
-      <nav 
-        className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-secondary/95 backdrop-blur-md border-b border-tertiary py-2 shadow-lg' 
-            : 'bg-transparent py-6'
-        }`}
+      <nav
+        className={`fixed top-0 z-50 w-full transition-all duration-300 ${isScrolled
+          ? 'bg-secondary/95 backdrop-blur-md border-b border-tertiary py-2 shadow-lg'
+          : 'bg-transparent py-6'
+          }`}
       >
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8">
           <div className="flex items-center gap-3">
@@ -59,13 +58,13 @@ export default function App() {
               <span className="text-[10px] font-medium uppercase tracking-[0.2em] text-primary">Estudio Jurídico</span>
             </div>
           </div>
-          
+
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a 
+              <a
                 key={link.name}
-                href={link.href} 
+                href={link.href}
                 className="text-sm font-medium text-white/90 hover:text-primary transition-colors relative group"
               >
                 {link.name}
@@ -74,8 +73,8 @@ export default function App() {
             ))}
           </div>
 
-          <a 
-            href="https://wa.me/5493329000000" 
+          <a
+            href="https://wa.me/+549332952-8537"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 rounded-sm border border-primary bg-transparent px-5 py-2 text-sm font-semibold uppercase tracking-wider text-primary hover:bg-primary hover:text-secondary transition-all duration-300"
@@ -84,7 +83,7 @@ export default function App() {
           </a>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden text-white"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
@@ -94,13 +93,13 @@ export default function App() {
 
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             className="md:hidden absolute top-full left-0 w-full bg-secondary border-b border-tertiary p-6 flex flex-col gap-4 shadow-2xl"
           >
             {navLinks.map((link) => (
-              <a 
+              <a
                 key={link.name}
                 href={link.href}
                 className="text-base font-medium text-white hover:text-primary py-2 border-b border-white/5"
@@ -109,8 +108,8 @@ export default function App() {
                 {link.name}
               </a>
             ))}
-            <a 
-              href="https://wa.me/5493329000000"
+            <a
+              href="https://wa.me/+54 9 3329 52-8537"
               className="mt-2 flex items-center justify-center gap-2 rounded-sm bg-primary px-5 py-3 text-sm font-bold uppercase tracking-wider text-secondary"
               onClick={() => setMobileMenuOpen(false)}
             >
@@ -123,15 +122,15 @@ export default function App() {
       {/* Hero Section */}
       <section id="inicio" className="relative flex min-h-[90vh] items-center justify-center overflow-hidden">
         {/* Background Image */}
-        <div 
+        <div
           className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-          style={{ 
-            backgroundImage: "url('https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=2000&auto=format&fit=crop')",
+          style={{
+            backgroundImage: "url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2000&auto=format&fit=crop')",
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-secondary/80 via-secondary/80 to-secondary/95 mix-blend-multiply"></div>
         </div>
-        
+
         <div className="relative z-10 container mx-auto px-6 text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -141,7 +140,7 @@ export default function App() {
           >
             <div className="mb-8 h-px w-24 bg-primary"></div>
             <h1 className="mb-6 font-display text-4xl font-bold leading-tight tracking-tight text-white sm:text-6xl lg:text-7xl">
-              Dra. Karina <br className="sm:hidden"/> Andrea Roca
+              Dra. Karina <br className="sm:hidden" /> Andrea Roca
             </h1>
             <p className="mb-8 font-display text-xl font-medium tracking-wide text-primary sm:text-2xl">
               Abogada
@@ -149,15 +148,15 @@ export default function App() {
             <p className="max-w-2xl text-base font-light leading-relaxed text-gray-300 sm:text-lg mb-12">
               Doctoranda en Ciencias Jurídicas | <span className="text-white font-medium">20 años de experiencia</span> y ética profesional al servicio de la justicia en San Pedro.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4">
-              <a 
+              <a
                 href="#contacto"
                 className="flex min-w-[180px] items-center justify-center rounded-sm bg-primary px-8 py-3 text-sm font-bold uppercase tracking-widest text-secondary hover:bg-white hover:text-secondary transition-all duration-300"
               >
                 Consulta Legal
               </a>
-              <a 
+              <a
                 href="#areas"
                 className="flex min-w-[180px] items-center justify-center rounded-sm border border-gray-600 bg-transparent px-8 py-3 text-sm font-bold uppercase tracking-widest text-white hover:border-primary hover:text-primary transition-all duration-300"
               >
@@ -175,23 +174,23 @@ export default function App() {
             {/* Image Grid */}
             <div className="relative grid grid-cols-2 gap-4">
               <div className="col-span-2 aspect-[16/9] w-full overflow-hidden rounded-sm shadow-lg">
-                <img 
-                  src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=1600&auto=format&fit=crop" 
-                  alt="Lawyer writing" 
+                <img
+                  src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1600&auto=format&fit=crop"
+                  alt="Lawyer writing"
                   className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="aspect-square w-full overflow-hidden rounded-sm bg-gray-100 shadow-lg">
-                <img 
-                  src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?q=80&w=800&auto=format&fit=crop" 
-                  alt="Gavel" 
+                <img
+                  src="https://images.unsplash.com/photo-1589578527966-fdac0f44566c?q=80&w=800&auto=format&fit=crop"
+                  alt="Gavel"
                   className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
               <div className="aspect-square w-full overflow-hidden rounded-sm bg-secondary flex items-center justify-center p-6 text-center shadow-lg">
                 <div className="flex flex-col items-center justify-center">
                   <span className="font-display text-5xl font-bold text-primary">20</span>
-                  <span className="mt-2 text-sm font-medium uppercase tracking-widest text-white">Años de<br/>Experiencia</span>
+                  <span className="mt-2 text-sm font-medium uppercase tracking-widest text-white">Años de<br />Experiencia</span>
                 </div>
               </div>
             </div>
@@ -208,7 +207,7 @@ export default function App() {
               <p className="mb-8 text-base leading-relaxed text-gray-600">
                 El estudio se distingue por un compromiso inquebrantable con la ética profesional. Entendemos que detrás de cada expediente hay una historia de vida, una familia o un patrimonio que merece la máxima dedicación y transparencia.
               </p>
-              
+
               <ul className="space-y-4">
                 {[
                   "Doctoranda en Ciencias Jurídicas",
@@ -234,31 +233,31 @@ export default function App() {
             <div className="mx-auto h-1 w-20 bg-primary"></div>
             <p className="mt-4 text-gray-400">Soluciones legales integrales con especialización</p>
           </div>
-          
+
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
-              { 
-                icon: Home, 
-                title: "Derecho Inmobiliario", 
-                desc: "Asesoramiento integral en compraventas, alquileres, desalojos y regularización dominial." 
+              {
+                icon: Home,
+                title: "Derecho Inmobiliario",
+                desc: "Asesoramiento integral en compraventas, alquileres, desalojos y regularización dominial."
               },
-              { 
-                icon: Users, 
-                title: "Derecho de Familia", 
-                desc: "Divorcios, cuota alimentaria, regímenes de comunicación y filiaciones con absoluta discreción." 
+              {
+                icon: Users,
+                title: "Derecho de Familia",
+                desc: "Divorcios, cuota alimentaria, regímenes de comunicación y filiaciones con absoluta discreción."
               },
-              { 
-                icon: Accessibility, 
-                title: "Discapacidad", 
-                desc: "Amparos de salud, cobertura de prestaciones y defensa de derechos de personas con discapacidad." 
+              {
+                icon: Accessibility,
+                title: "Discapacidad",
+                desc: "Amparos de salud, cobertura de prestaciones y defensa de derechos de personas con discapacidad."
               },
-              { 
-                icon: ScrollText, 
-                title: "Sucesiones", 
-                desc: "Trámites sucesorios ágiles, declaratoria de herederos y partición de bienes." 
+              {
+                icon: ScrollText,
+                title: "Sucesiones",
+                desc: "Trámites sucesorios ágiles, declaratoria de herederos y partición de bienes."
               }
             ].map((area, index) => (
-              <div 
+              <div
                 key={index}
                 className="group relative flex flex-col items-center border border-tertiary bg-[#1a2333] p-8 text-center transition-all hover:border-primary hover:-translate-y-1 duration-300"
               >
@@ -291,9 +290,9 @@ export default function App() {
               </p>
               <div className="flex items-center gap-4">
                 <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-600 border border-primary/30">
-                  <img 
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop" 
-                    alt="Dra. Karina Roca" 
+                  <img
+                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+                    alt="Dra. Karina Roca"
                     className="h-full w-full object-cover opacity-90"
                   />
                 </div>
@@ -303,14 +302,14 @@ export default function App() {
                 </div>
               </div>
             </div>
-            
+
             <div className="order-1 flex justify-center lg:order-2 lg:justify-end">
               <div className="relative h-64 w-64 md:h-80 md:w-80 border border-primary/20 p-4">
                 <div className="absolute -right-4 -top-4 h-24 w-24 border-r border-t border-primary"></div>
                 <div className="absolute -bottom-4 -left-4 h-24 w-24 border-b border-l border-primary"></div>
-                <div 
+                <div
                   className="h-full w-full bg-cover bg-center opacity-60 grayscale hover:grayscale-0 transition-all duration-700"
-                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=800&auto=format&fit=crop')" }}
+                  style={{ backgroundImage: "url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2000&auto=format&fit=crop')" }}
                 ></div>
               </div>
             </div>
@@ -342,7 +341,7 @@ export default function App() {
                   </div>
                   <div>
                     <h3 className="mb-1 text-lg font-semibold text-white">Teléfono</h3>
-                    <p className="text-gray-400">+54 9 3329 00-0000</p>
+                    <p className="text-gray-400">+54 9 3329 52-8537</p>
                     <p className="text-sm text-gray-500 mt-1">Lunes a Viernes de 9:00 a 17:00 hs</p>
                   </div>
                 </div>
@@ -356,10 +355,10 @@ export default function App() {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-10">
-                <a 
-                  href="https://wa.me/5493329000000"
+                <a
+                  href="https://wa.me/+54 9 3329 52-8537"
                   className="inline-flex items-center gap-3 rounded-sm bg-[#25D366] px-6 py-3 text-sm font-bold uppercase tracking-wider text-white hover:bg-[#20bd5a] transition-colors shadow-lg shadow-green-900/20"
                 >
                   <MessageCircle className="h-5 w-5" />
@@ -370,9 +369,9 @@ export default function App() {
 
             {/* Map Placeholder */}
             <div className="h-[400px] w-full overflow-hidden rounded-sm border border-tertiary bg-secondary relative group">
-              <img 
-                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1600&auto=format&fit=crop" 
-                alt="Map location" 
+              <img
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?q=80&w=1600&auto=format&fit=crop"
+                alt="Map location"
                 className="h-full w-full object-cover opacity-60 group-hover:opacity-70 transition-opacity"
               />
               <div className="absolute inset-0 flex items-center justify-center">
@@ -400,8 +399,8 @@ export default function App() {
       </section>
 
       {/* Floating WhatsApp */}
-      <a 
-        href="https://wa.me/5493329000000"
+      <a
+        href="https://wa.me/+54 9 3329 52-8537"
         aria-label="Chat on WhatsApp"
         className="fixed bottom-6 right-6 z-50 flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] text-white shadow-xl transition-transform hover:scale-110 hover:shadow-2xl hover:shadow-green-900/50"
       >
