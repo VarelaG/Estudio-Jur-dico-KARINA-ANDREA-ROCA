@@ -146,7 +146,7 @@ export default function App() {
               Abogada
             </p>
             <p className="max-w-2xl text-base font-light leading-relaxed text-gray-300 sm:text-lg mb-12">
-              Doctoranda en Ciencias Jurídicas | <span className="text-white font-medium">20 años de experiencia</span> y ética profesional al servicio de la justicia en San Pedro.
+              Doctoranda en Ciencias Jurídicas | <span className="text-white font-medium">20 años de experiencia</span> y ética profesional al servicio de la justicia en Baradero, San Pedro y el Departamento judicial de San Nicolás.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -211,8 +211,7 @@ export default function App() {
               <ul className="space-y-4">
                 {[
                   "Doctoranda en Ciencias Jurídicas",
-                  "Especialización en Derecho de Familia y Sucesiones",
-                  "Atención personalizada en San Pedro"
+                  "Atención personalizada en Baradero, San Pedro y San Nicolás"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <CheckCircle className="text-primary h-5 w-5 flex-shrink-0" />
@@ -231,14 +230,14 @@ export default function App() {
           <div className="mb-16 text-center">
             <h2 className="mb-3 font-display text-3xl font-bold text-white sm:text-4xl">Áreas de Práctica</h2>
             <div className="mx-auto h-1 w-20 bg-primary"></div>
-            <p className="mt-4 text-gray-400">Soluciones legales integrales con especialización</p>
+            <p className="mt-4 text-gray-400">Soluciones legales integrales con trayectoria</p>
           </div>
 
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {[
               {
                 icon: Home,
-                title: "Derecho Inmobiliario",
+                title: "Derechos Reales",
                 desc: "Asesoramiento integral en compraventas, alquileres, desalojos y regularización dominial."
               },
               {
@@ -249,7 +248,7 @@ export default function App() {
               {
                 icon: Accessibility,
                 title: "Discapacidad",
-                desc: "Amparos de salud, cobertura de prestaciones y defensa de derechos de personas con discapacidad."
+                desc: "Reclamos y defensa de derechos de personas con discapacidad."
               },
               {
                 icon: ScrollText,
@@ -297,7 +296,7 @@ export default function App() {
                   />
                 </div>
                 <div>
-                  <p className="font-display text-lg font-bold text-white">Dra. Karina Roca</p>
+                  <p className="font-display text-lg font-bold text-white">Karina A. Roca</p>
                   <p className="text-sm text-primary">Abogada Fundadora</p>
                 </div>
               </div>
@@ -351,7 +350,7 @@ export default function App() {
                   </div>
                   <div>
                     <h3 className="mb-1 text-lg font-semibold text-white">Email</h3>
-                    <p className="text-gray-400">contacto@draroca.com.ar</p>
+                    <p className="text-gray-400">estudiokarinaroca@gmail.com</p>
                   </div>
                 </div>
               </div>
