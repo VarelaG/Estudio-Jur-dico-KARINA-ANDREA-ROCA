@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #c5a059;
+  --color-secondary: #111722;
+  --color-tertiary: #243047;
+  --color-background-light: #ffffff;
+  --color-background-dark: #0b0f19;
+  --color-background-oxford: #2a3441;
+  
+  --font-display: "Cinzel", serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background-dark);
+  color: #f8fafc;
+}
