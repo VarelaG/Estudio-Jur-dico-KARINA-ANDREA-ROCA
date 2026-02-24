@@ -148,7 +148,7 @@ export default function App() {
               Abogada
             </p>
             <p className="max-w-2xl text-base font-light leading-relaxed text-gray-300 sm:text-lg mb-12">
-              Doctoranda en Ciencias Jurídicas | <span className="text-white font-medium">20 años de experiencia</span> y ética profesional al servicio de la justicia en Baradero, San Pedro y el Departamento judicial de San Nicolás.
+              Doctoranda en Ciencias Jurídicas | <span className="text-white font-medium">20 años de experiencia</span> y ética profesional con atención personalizada y virtual.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -177,8 +177,8 @@ export default function App() {
             <div className="relative grid grid-cols-2 gap-4">
               <div className="col-span-2 aspect-[16/9] w-full overflow-hidden rounded-sm shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1600&auto=format&fit=crop"
-                  alt="Mano de la abogada Karina A. Roca redactando documentos jurídicos"
+                  src="/dra-roca-1.jpg"
+                  alt="Dra. Karina A. Roca"
                   className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
                 />
               </div>
@@ -213,7 +213,7 @@ export default function App() {
               <ul className="space-y-4">
                 {[
                   "Doctoranda en Ciencias Jurídicas",
-                  "Atención personalizada en Baradero, San Pedro y San Nicolás"
+                  "Atención personalizada y virtual"
                 ].map((item, i) => (
                   <li key={i} className="flex items-center gap-3">
                     <CheckCircle className="text-primary h-5 w-5 flex-shrink-0" />
@@ -292,7 +292,7 @@ export default function App() {
               <div className="flex items-center gap-4">
                 <div className="h-12 w-12 overflow-hidden rounded-full bg-gray-600 border border-primary/30">
                   <img
-                    src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=200&auto=format&fit=crop"
+                    src="/dra-roca-2.jpg"
                     alt="Dra. Karina Roca"
                     className="h-full w-full object-cover opacity-90"
                   />
