@@ -148,7 +148,8 @@ export default function App() {
               Abogada
             </p>
             <p className="max-w-2xl text-base font-light leading-relaxed text-gray-300 sm:text-lg mb-12">
-              Doctoranda en Ciencias Jurídicas | <span className="text-white font-medium">20 años de experiencia</span> y ética profesional con atención personalizada y virtual.
+
+              Doctoranda en Ciencias Jurídicas | <span className="text-white font-medium">20 años de experiencia</span> y ética profesional en Baradero, San Pedro y Departamento Judicial de San Nicolás.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
