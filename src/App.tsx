@@ -175,12 +175,20 @@ export default function App() {
           <div className="grid gap-16 lg:grid-cols-2 lg:items-center">
             {/* Image Grid */}
             <div className="relative grid grid-cols-2 gap-4">
-              <div className="col-span-2 aspect-[16/9] w-full overflow-hidden rounded-sm shadow-lg">
+              <div className="col-span-2 aspect-[16/9] w-full overflow-hidden rounded-sm shadow-xl relative group border border-primary/20">
                 <img
                   src="/dra-roca-1.jpg"
                   alt="Dra. Karina A. Roca"
-                  className="h-full w-full object-cover hover:scale-105 transition-transform duration-700"
+                  className="h-full w-full object-cover brightness-[1.05] contrast-[1.05] transition-all duration-700 group-hover:scale-105"
                 />
+                {/* Capa de acople de color más clara (Overlay en lugar de Multiply) */}
+                <div className="absolute inset-0 bg-secondary/30 mix-blend-overlay pointer-events-none transition-opacity duration-700 group-hover:opacity-0"></div>
+
+                {/* Brillo dorado sutil en las luces para integrar con el tema */}
+                <div className="absolute inset-0 bg-primary/5 mix-blend-soft-light pointer-events-none transition-opacity duration-700 group-hover:opacity-0"></div>
+
+                {/* Marco decorativo elegante y fino */}
+                <div className="absolute inset-0 border border-primary/30 pointer-events-none m-4"></div>
               </div>
               <div className="aspect-square w-full overflow-hidden rounded-sm bg-gray-100 shadow-lg">
                 <img
